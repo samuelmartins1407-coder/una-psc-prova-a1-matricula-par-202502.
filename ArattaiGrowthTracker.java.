@@ -1,6 +1,9 @@
 // Nome: [Samuel Martins Silva]
 // Matricula: [325225302]
 
+// Nome: [Samuel Martins Silva]
+// Matricula: []
+
 public class ArattaiGrowthTracker {
     public static void main(String[] args) {
   //iniciando arrays
@@ -12,7 +15,7 @@ String[] diasDaSemana = {"Dom", "Seg", "Ter", "Qua", "Qui", "Sex", "Sáb"};
     for (int downloads : downloadsDiarios) {
 totalDownloads += downloads;
 }
-    System.out.println("Analise de Crescimento do Arattai, 7 dias");
+    System.out.println(" R2 Analise de Crescimento do Arattai, 7 dias");
     System.out.println("\n Downloads na Semana: " + totalDownloads);
 
           //Olhando pico e minimo
@@ -33,7 +36,7 @@ indicePico=i;
         
     }
 
-        System.out.println("\n Analise de Extremos:");
+        System.out.println("\n R3 Analise de Extremos:");
         System.out.println("Dia da semana com pico de Downloads: " + diasDaSemana[indicePico] + " com "+ pico +" downloads.");
         System.out.println("Dia da semana com Mínimo de Downloads: " + diasDaSemana[indiceMinimo] + "com" + minimo + " downloads.");
 
@@ -41,7 +44,7 @@ indicePico=i;
     int metaDiaria = 1000000;
     int diasAcimaDaMeta = 0;
 
-        System.out.println("\n Analise de Metas (Meta Diaria: "+ metaDiaria + "):");
+        System.out.println("\n R4 Analise de Metas (Meta Diaria: "+ metaDiaria + "):");
     for (int i = 0; i < downloadsDiarios.length; i++) {
         if (downloadsDiarios[i] > metaDiaria) {
         System.out.println("  > " + diasDaSemana[i] +": sucesso! (" + downloadsDiarios[i] + " downloads)");
@@ -49,6 +52,11 @@ diasAcimaDaMeta++;
 } else {
     System.out.println("  > " + diasDaSemana[i] +": Não atingiu. (" + downloadsDiarios[i] + " downloads)");
     }
+}
+
+    System.out.println("\n[Relatório Final] O Arattai superou a meta diaria em " + diasAcimaDaMeta + " dias esta semana.");
+}
+}
 }
 
     System.out.println("\n[Relatório Final] O Arattai superou a meta diaria em " + diasAcimaDaMeta + " dias esta semana.");
