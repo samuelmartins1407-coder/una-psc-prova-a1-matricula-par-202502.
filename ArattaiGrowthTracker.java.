@@ -1,9 +1,6 @@
 // Nome: [Samuel Martins Silva]
 // Matricula: [325225302]
 
-// Nome: [Samuel Martins Silva]
-// Matricula: []
-
 public class ArattaiGrowthTracker {
     public static void main(String[] args) {
   //iniciando arrays
